@@ -10,3 +10,19 @@ $dynamo = new DynamoDbClient([
     'region' => 'us-east-1',
     'credentials' => require_once 'credentials.php',
 ]);
+
+/*$result = $dynamo->putItem([
+    'TableName' => 'Product_Catalog',
+    'Item' => [
+        'Id' => ['S' => '1'],
+        'Name' => ['S' => 'TV Fictícia'],
+        'Descricao' => ['S' => 'Uma TV muito bonita'],
+        'Polegadas' => ['N' => '42']
+    ],
+]);
+
+var_dump($result);*/
+
+$result = $dynamo->query([
+
+]);
