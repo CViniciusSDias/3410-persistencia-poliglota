@@ -24,5 +24,13 @@ $dynamo = new DynamoDbClient([
 var_dump($result);*/
 
 $result = $dynamo->query([
-
+    'ExpressionAttributeValues' => [
+        ':id' => [
+            'S' => '1',
+        ],
+    ],
+    'KeyConditionExpression' => 'Id = :id',
+    'TableName' => 'Product_Catalog',
 ]);
+
+var_dump($result->get('Items'));
