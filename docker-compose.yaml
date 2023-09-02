@@ -1,0 +1,11 @@
+version: '3'
+services:
+  php:
+    build: .
+    volumes:
+      - ./:/app
+    working_dir: /app
+  relacional:
+    image: postgres:15.4
+    environment:
+      POSTGRES_PASSWORD: senha_postgres
