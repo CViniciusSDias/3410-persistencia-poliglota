@@ -1,6 +1,7 @@
 {
     "require": {
         "ext-pdo": "*",
-        "ext-redis": "*"
+        "ext-redis": "*",
+        "ext-memcached": "*"
     }
 }

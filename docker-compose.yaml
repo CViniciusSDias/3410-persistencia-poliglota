@@ -11,3 +11,5 @@ services:
       POSTGRES_PASSWORD: senha_postgres
   chave_valor:
     image: redis:7.2.0
+  em_memoria:
+    image: memcached:1.6.21
