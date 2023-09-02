@@ -13,3 +13,9 @@ services:
     image: redis:7.2.0
   em_memoria:
     image: memcached:1.6.21
+  documentos:
+    image: mongo:7.0.0
+    environment:
+      MONGO_INITDB_DATABASE: e_commerce
+      MONGO_INITDB_ROOT_PASSWORD: senha
+      MONGO_INITDB_ROOT_USERNAME: usuario

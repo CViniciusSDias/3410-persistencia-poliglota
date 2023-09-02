@@ -2,6 +2,8 @@
     "require": {
         "ext-pdo": "*",
         "ext-redis": "*",
-        "ext-memcached": "*"
+        "ext-memcached": "*",
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "^1.16"
     }
 }
