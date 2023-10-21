@@ -24,3 +24,5 @@ services:
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
+  colunares:
+    image: cassandra:4.1.3

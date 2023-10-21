@@ -6,7 +6,8 @@
         "ext-mongodb": "*",
         "mongodb/mongodb": "^1.16",
         "aws/aws-sdk-php": "^3.280",
-        "elasticsearch/elasticsearch": "^8.10"
+        "elasticsearch/elasticsearch": "^8.10",
+        "ext-cassandra": "*"
     },
     "config": {
         "allow-plugins": {
