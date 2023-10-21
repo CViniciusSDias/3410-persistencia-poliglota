@@ -8,4 +8,20 @@ $cluster = Cassandra::cluster()
 
 $session = $cluster->connect('e_commerce');
 
-var_dump($session);
+/*$statement = $session->prepare('INSERT INTO products (product_id, name, price) VALUES (?, ?, ?);');
+$rows = $session->execute($statement, [
+    'arguments' => [
+        'product_id' => 1,
+        'name' => 'Produto',
+        'price' => 1000_00,
+    ]
+]);*/
+
+
+$rows = $session->execute('SELECT * FROM products;');
+
+var_dump($rows);
+
+foreach ($rows as $row) {
+    var_dump($row);
+}
