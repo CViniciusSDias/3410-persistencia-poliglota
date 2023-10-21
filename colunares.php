@@ -25,3 +25,15 @@ var_dump($rows);
 foreach ($rows as $row) {
     var_dump($row);
 }
+
+
+/**
+ * 1,"Produto",100000
+ * 2,"Outro produto",50000
+ */
+
+/**
+ * 1,2
+ * "Produto","Outro produto"
+ * 100000,50000
+ */
