@@ -5,6 +5,12 @@
         "ext-memcached": "*",
         "ext-mongodb": "*",
         "mongodb/mongodb": "^1.16",
-        "aws/aws-sdk-php": "^3.280"
+        "aws/aws-sdk-php": "^3.280",
+        "elasticsearch/elasticsearch": "^8.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
