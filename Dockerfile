@@ -22,4 +22,4 @@ RUN apt-get install -y ninja-build git libuv1-dev cmake libgmp-dev && \
     cd scylladb-php-driver && \
     cmake --preset Release  && cd out/Release && ninja install && \
     cp ../../cassandra.ini /usr/local/etc/php/conf.d/cassandra.ini && \
-    cp cassandra.so /usr/local/lib/php/extensions/no-debug-non-zts-20220829/
+    cp cassandra.so /usr/local/lib/php/extensions/no-debug-non-zts-20220829/ \
