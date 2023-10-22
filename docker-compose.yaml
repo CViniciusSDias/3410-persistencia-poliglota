@@ -26,3 +26,5 @@ services:
       - discovery.type=single-node
   colunares:
     image: cassandra:4.1.3
+  mensageria:
+    image: rabbitmq:3.9.29

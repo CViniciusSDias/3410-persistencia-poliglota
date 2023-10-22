@@ -7,7 +7,8 @@
         "mongodb/mongodb": "^1.16",
         "aws/aws-sdk-php": "^3.280",
         "elasticsearch/elasticsearch": "^8.10",
-        "ext-cassandra": "*"
+        "ext-cassandra": "*",
+        "php-amqplib/php-amqplib": "3.5.4"
     },
     "config": {
         "allow-plugins": {
